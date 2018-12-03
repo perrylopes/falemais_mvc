@@ -1,0 +1,87 @@
+//Settings
+cor-fundo = #695d46
+text-fundo = #fff
+//Tools
+//Genric
+*
+  margin: 0
+  padding: 0
+  border: 0
+  list-style: none
+  vertical-align: baseline
+//Base
+main
+  max-width: 920px
+  min-width: 375px
+  margin: 0 auto
+  padding: 10px
+
+table
+  border-collapse: collapse
+
+//objects
+.grid
+    display flex
+    justify-content: center
+    margin-bottom: 50px;
+
+.form
+    display: flex
+    flex-direction: column
+    width 100%
+    @media screen and (min-width: 728px)
+      flex-direction: row
+.form__alinhar
+    display flex
+    flex-direction: column
+    @media screen and (min-width: 728px)
+      margin: 10px
+      width: 300px
+.form__text
+    text-transform: uppercase
+    font-weight: 700
+    margin: 5px
+.form__dados
+    width: 100%
+    height 32px
+    background-color: cor-fundo
+    color: text-fundo
+    font-weight: 700
+    text-transform: uppercase
+    border: 1px solid black
+.form__dados_selector
+    background-color: #ffffff
+    color: black;
+.form__buttom
+    margin: 20px auto
+    width: 100px
+    height 32px
+    background-color: cor-fundo
+    color: text-fundo
+    font-weight: 700
+    text-transform: uppercase
+    border: 1px solid black
+    @media screen and (min-width: 728px)
+      margin: 35px auto
+      
+//Components
+.table_cabecalho
+    background-color: cor-fundo
+    color: text-fundo 
+.table_cabecalho_cal 
+    padding: 10px    
+.table-valores
+    width: 240px
+    border: 1px solid black
+    height: 32px;
+    vertical-align: middle
+    text-align: center
+
+.table-calculo
+    width: 100px;
+    border: 1px solid black
+    height: 32px;
+    vertical-align: middle
+    text-align: center
+//Trumps
+
