@@ -21,9 +21,16 @@ table
 
 //objects
 .grid
-    display flex
-    justify-content: center
     margin-bottom: 50px;
+    max-width 100%
+    @media screen and (min-width: 728px)
+      display flex
+      justify-content: center 
+.grid_scroll
+    overflow auto
+    @media screen and (min-width: 728px)
+        overflow: inherit
+    
 
 .form
     display: flex
