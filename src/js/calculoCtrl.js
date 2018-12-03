@@ -36,7 +36,7 @@ function dadosCalc(dados, valor , origem, destino){
             minuto: dados.minuto,
             plano: "Fale Mais " + dados.plano,
             com: "R$" + com(dados.minuto,valor, dados.plano),
-            sem: "R$" + dados.minuto*valor
+            sem: "R$" + (dados.minuto*valor).toFixed(2)
         }
 }
 
@@ -45,6 +45,6 @@ function com(minuto,valor,plano){
             return 0;
         }else{
             let porcentagem = (minuto*valor)*0.1; 
-            return ((minuto - plano)*valor)+porcentagem;
+            return (((minuto - plano)*valor)+porcentagem).toFixed(2);
         }
 }
